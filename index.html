@@ -23,6 +23,18 @@
           darkMode: 'class',
         }
     </script>
+    <style>
+          .childimage {
+          
+   border-radius: 0.5rem; /* rounded-lg */
+  transition: all 0.5s ease-in-out; /* transition duration-500 ease-in-out */
+}
+.childimage:hover{
+  transform: scale(0.95); /* hover:scale-95 */
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+              0 10px 10px -5px rgba(0, 0, 0, 0.04); /* hover:shadow-4xl */
+}
+    </style>
 
 </head>
 <body class="bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-200 transition-colors duration-500">
@@ -33,7 +45,7 @@
             
             <div class="flex-shrink-0">
                 <a href="#" class="flex items-center">
-                    <img src="./images/Logo.png" alt="Logo" class="h-16 w-16 rounded-full object-cover">
+                    <img src="/asset/logo.jpg" alt="Logo" class="h-16 w-16 rounded-full object-cover">
                 </a>
             </div>
 
@@ -57,7 +69,7 @@
                 <a href="/index.html" class="text-blue-600 dark:text-blue-600 font-medium transition hover:text-blue-600 dark:hover:text-blue-400 whitespace-nowrap">Home</a>
                 <a href="./page/course.html" class="text-gray-600 dark:text-gray-300 font-medium transition hover:text-blue-600 dark:hover:text-blue-400 whitespace-nowrap">Courses</a>
                 <a href="./page/about us.html" class="text-gray-600 dark:text-gray-300 font-medium transition hover:text-blue-600 dark:hover:text-blue-400 whitespace-nowrap">About</a>
-                <a href="./page/contact.html" class="text-gray-600 dark:text-gray-300 font-medium transition hover:text-blue-600 dark:hover:text-blue-400 whitespace-nowrap">Contact Us</a>
+               
                 <a href="./page/sign in.html" class="text-blue-600 dark:text-blue-400 font-medium transition hover:text-blue-700 dark:hover:text-blue-300 whitespace-nowrap">Sign in</a>
                 <a href="./page/register.html" class="px-4 py-2 text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700
                     transition whitespace-nowrap">
@@ -209,27 +221,21 @@
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center">
             <div class="md:w-1/2 mb-10 md:mb-0">
                 <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6 dark:text-white">
-                    Learn <span class="text-[#0661DF]">Job Ready Skills</span> from Free  Online Courses with <span class="text-[#0661DF]">Certificates</span> 
+                    Learn <span class="text-[#0661DF]">Job Ready Skills</span> from Free Online Courses with <span class="text-[#0661DF]">Certificates</span> 
                 </h1>
                 <p class="text-lg text-gray-500 mb-8">
-                    Discover a world of knowledge at your fingertips. Our e-learning platform offers a wide range of courses in design, technology, and more to help you achieve your learning goals.
+                    Discover a world of knowledge at your fingertips. Our Code Learning platform offers a wide range of courses in design, technology, and more to help you achieve your learning goals.
                 </p>
                 <div class="flex gap-4">
-                <a href="./pages/about.html" class="px-6 py-3 bg-blue-600 dark:border-0 text-white font-semibold rounded-md hover:bg-blue-700 transition duration-150 ease-in-out border-2 border-gray-200">
+                <a href="./page/about us.html" class="px-6 py-3 bg-blue-600 dark:border-0 text-white font-semibold rounded-md hover:bg-blue-700 transition duration-150 ease-in-out border-2 border-gray-200">
                     Read More
                 </a>
-                <a href="./pages/form_Signup.html" class="px-6 py-3 bg-[#F6F9FF] dark:bg-blue-200 dark:border-0 text-[#0661DF] font-semibold rounded-md hover:bg-blue-700 transition duration-150 ease-in-out border-2 border-gray-200 hover:text-white">
+                <a href="./page/sign in.html"class="px-6 py-3 bg-[#F6F9FF] dark:bg-blue-200 dark:border-0 text-[#0661DF] font-semibold rounded-md hover:bg-blue-700 transition duration-150 ease-in-out border-2 border-gray-200 hover:text-white">
                     Join Now
                 </a>  
                 </div>
             </div>
-            <div class="md:w-1/2">
-                <!-- Light mode image -->
-                <img src="./images/homeImage.jpg" alt="E-Learning" class="w-full h-auto block dark:hidden">
-
-                <!-- Dark mode image -->
-                <img src="./images/homeImageDarkmode.png" alt="E-Learning" class="w-full h-auto hidden dark:block">
-            </div>
+            
         </div>
     </section>
     <!-- short introduction -->
@@ -249,12 +255,9 @@ Certification on Course, taught by top instructors.
     <section>
         <div class="mb-4 ml-10 mt-10 text-center">
             <h2 class="text-lg md:text-4xl font-medium text-[#0661DF] dark:text-white">
-            Why Choose Our E-Learning Platform?
+            Why Choose Our Code learning Platform?
         </h2>
-        <p class="text-lg text-gray-500 mt-2">
-            Get unlimited access to over 90% of courses, Projects, Specialization, and Professional
-Certification on Course, taught by top instructors.
-        </p>
+        
         </div>
         
         <div class="max-w-7xl mx-auto px-4 md:px-8 py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-2">
@@ -275,7 +278,7 @@ Certification on Course, taught by top instructors.
             </div>
             <!-- Card 2 -->
             <div class="bg-white dark:bg-gray-800 dark:border-0 rounded-lg border-2 border-gray-200 p-6 text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-                <img  src="./images/flexibleLearningImage.jpg" alt="Flexible Learning"" class="mx-auto mb-4 h-16 w-16 block dark:hidden">
+                <img  src="./images/flexibleLearningImage.jpg" alt="Flexible Learning" class="mx-auto mb-4 h-16 w-16 block dark:hidden">
 
                 <!-- Dark mode image -->
                 <img src="./images/FlexibleDarkMode.png" alt="Course" class="mx-auto mb-4 h-16 w-16 hidden dark:block">
@@ -328,349 +331,125 @@ Certification on Course, taught by top instructors.
                     Discover our carefully curated selection of courses designed to accelerate your career and expand your knowledge.
                 </p>
             </div>
-            <!-- Card 1 -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white  hover:shadow-xl duration-300 overflow-hidden
-                rounded-2xl dark:border-0 border-2 border-gray-200 dark:bg-gray-800 transition-all  dark:hover:shadow-blue-500/20">
-                    <div class="relative">
-                        <div class="h-60 flex items-center justify-center text-white text-xl p-4">
-                            <img src="./images/CourseImage1.jpg" alt="Figma UI UX Design" class="w-full h-full object-cover opacity-80 rounded-xl">
-                        </div>
-                        <span class="absolute top-3 right-3 bg-black text-white text-xs font-medium px-2 py-1 rounded-full">
-                            09 hr 08 mins
-                        </span>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-lg font-semibold text-gray-900 mb-1 dark:text-white">
-                            Figma UI UX Design..
-                        </h3>
-                        <p class="text-sm text-gray-500 mb-4 line-clamp-2">
-                            Use Figma to get a job in UI Design, User Interface, User Experience design.
-                        </p>
-
-                        <div class="flex justify-between items-center text-xs text-gray-500 mb-4">
-                            <div class="flex items-center space-x-1">
-                                <span class="text-yellow-500 font-bold">4.9</span> 
-                                <span class="text-gray-400">(125)</span>
-                            </div>
-                            <span class="bg-gray-100 text-gray-500 px-2 py-1 rounded-full font-medium">
-                                Intermediate
-                            </span>
-                        </div>
-
-                        <div class="flex justify-between items-center border-t pt-4 border-gray-100">
-                            <div class="flex items-center space-x-2">
-                                <div class="h-8 w-8 rounded-full bg-yellow-200 flex items-center justify-center text-xs text-gray-800 flex-shrink-0">
-                                    JC
-                                </div>
-                                <div>
-                                    <p class="text-sm font-medium text-gray-800">Jane Cooper</p>
-                                    <p class="text-xs text-gray-500">2020 Enrolled</p>
-                                </div>
-                            </div>
-                            
-                            <div class="text-right">
-                                <p class="text-lg font-bold text-gray-900 mb-1">$19</p>
-                                <a href="#" class="text-blue-600 text-sm font-semibold hover:text-blue-800 transition flex items-center space-x-1">
-                                    <span>Enroll Now</span>
-                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Card2 -->
-                <div class="bg-white  hover:shadow-xl duration-300 overflow-hidden
-                rounded-2xl border-2 dark:border-0 border-gray-200 dark:bg-gray-800 transition-all  dark:hover:shadow-blue-500/20">
-                    <div class="relative">
-                        <div class="h-60 flex items-center justify-center text-white text-xl p-4">
-                            <img src="./images/CourseImage2.jpg" alt="Figma UI UX Design" class="w-full h-full object-cover opacity-80 rounded-xl">
-                        </div>
-                        
-                        <span class="absolute top-3 right-3 bg-black text-white text-xs font-medium px-2 py-1 rounded-full">
-                            09 hr 08 mins
-                        </span>
-                    </div>
-
-                    <div class="p-6">
-                        <h3 class="text-lg font-semibold text-gray-900 mb-1 dark:text-white">
-                            Figma UI UX Design..
-                        </h3>
-                        <p class="text-sm text-gray-500 mb-4 line-clamp-2">
-                            Use Figma to get a job in UI Design, User Interface, User Experience design.
-                        </p>
-
-                        <div class="flex justify-between items-center text-xs text-gray-500 mb-4">
-                            <div class="flex items-center space-x-1">
-                                <span class="text-yellow-500 font-bold">4.9</span> 
-                                <span class="text-gray-400">(125)</span>
-                            </div>
-                            <span class="bg-gray-100 text-gray-500 px-2 py-1 rounded-full font-medium">
-                                Intermediate
-                            </span>
-                        </div>
-
-                        <div class="flex justify-between items-center border-t pt-4 border-gray-100">
-                            <div class="flex items-center space-x-2">
-                                <div class="h-8 w-8 rounded-full bg-blue-200 flex items-center justify-center text-xs text-gray-800 flex-shrink-0">
-                                    JL
-                                </div>
-                                <div>
-                                    <p class="text-sm font-medium text-gray-800">Janifer Lawrence</p>
-                                    <p class="text-xs text-gray-500">2020 Enrolled</p>
-                                </div>
-                            </div>
-                            
-                            <div class="text-right">
-                                <p class="text-lg font-bold text-gray-900 mb-1">$24</p>
-                                <a href="#" class="text-blue-600 text-sm font-semibold hover:text-blue-800 transition flex items-center space-x-1">
-                                    <span>Enroll Now</span>
-                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-                    <!-- Card 3 -->
-
-                <div class="bg-white  hover:shadow-xl duration-300 overflow-hidden
-                rounded-2xl border-2 dark:border-0 border-gray-200 dark:bg-gray-800 transition-all  dark:hover:shadow-blue-500/20">
-                    <div class="relative">
-                        <div class="h-60 flex items-center justify-center text-white text-xl p-4">
-                            <img src="./images/courseImage3.jpg" alt="Figma UI UX Design" class="w-full h-full object-cover opacity-80 rounded-xl">
-                        </div>
-                        
-                        <span class="absolute top-3 right-3 bg-black text-white text-xs font-medium px-2 py-1 rounded-full">
-                            09 hr 08 mins
-                        </span>
-                    </div>
-
-                    <div class="p-6">
-                        <h3 class="text-lg font-semibold text-gray-900 mb-1 dark:text-white">
-                            Figma UI UX Design..
-                        </h3>
-                        <p class="text-sm text-gray-500 mb-4 line-clamp-2">
-                            Use Figma to get a job in UI Design, User Interface, User Experience design.
-                        </p>
-
-                        <div class="flex justify-between items-center text-xs text-gray-500 mb-4">
-                            <div class="flex items-center space-x-1">
-                                <span class="text-yellow-500 font-bold">4.9</span> 
-                                <span class="text-gray-400">(125)</span>
-                            </div>
-                            <span class="bg-gray-100 text-gray-500 px-2 py-1 rounded-full font-medium">
-                                Intermediate
-                            </span>
-                        </div>
-
-                        <div class="flex justify-between items-center border-t pt-4 border-gray-100">
-
-                            <div class="flex items-center space-x-2">
-                                <div class="h-8 w-8 rounded-full bg-red-200 flex items-center justify-center text-xs text-gray-800 flex-shrink-0">
-                                    ST
-                                </div>
-                                <div>
-                                    <p class="text-sm font-medium text-gray-800">Sok Thida</p>
-                                    <p class="text-xs text-gray-500">2020 Enrolled</p>
-                                </div>
-                            </div>
-                            
-                            <div class="text-right">
-                                <p class="text-lg font-bold text-gray-900 mb-1">$25</p>
-                                <a href="#" class="text-blue-600 text-sm font-semibold hover:text-blue-800 transition flex items-center space-x-1">
-                                    <span>Enroll Now</span>
-                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-
-            </div>
-        </div>
-    </section>
-    <!-- Recent Activities -->
-    <section class=" dark:bg-gray-900 bg-white py-16 transition-colors duration-500">
-        <!-- tittle -->
-        <div class="px-16 font-medium">
-            <h3 class="inline-block  text-blue-600 dark:text-white px-8 py-3 text-3xl">
-            Recent Activities
-            </h3>
-        </div>
-        <div class="container mx-auto w-[90%] grid grid-cols-1 md:grid-cols-2 gap-2">
             
-            <!-- Left Column -->
-            <div class="flex flex-col gap-6">
-                <!-- Card 1 -->
-                <div class="bg-white dark:border-0 rounded-2xl border-2 border-gray-200 dark:bg-gray-800 
-                p-6 flex flex-col md:flex-row items-center md:items-start gap-6 
-                transition-all duration-300 
-                hover:shadow-xl dark:hover:shadow-blue-500/20 h-full">
-                    <img class="" src="./images/ActivitiesImage8.png" alt="Educational Seminar" width="335px" height="223px">
-                    <div class="text-center md:text-left flex flex-col">
-                        <div class="text-[#0661DF] dark:text-gray-500">
-                        <p>
-                            <time datetime="2025-10-09" class="text-blue-600">October 11, 2025</time> 
-                        </p>
-                        </div>
-                        <h4 class="text-2xl font-bold text-gray-900 dark:text-white mb-3">
-                        Educational Seminar
-                        </h4>
-                        <p class="text-gray-500">
-                         ISTAD held a seminar on “Advantages and Disadvantages of Students Working While Studying and Aligning Skills for Career Goals.” was led by Mr. Chin Phearum, Director of ISTAD.
-                        </p>
-                    </div>
-                </div>
-
-            <!-- Card 2 -->
-                    <div class="bg-white dark:border-0 rounded-2xl border-2 border-gray-200 dark:bg-gray-800 
-                    p-6 flex flex-col md:flex-row items-center md:items-start gap-6 
-                    transition-all duration-300 
-                    hover:shadow-xl dark:hover:shadow-blue-500/20 h-full">
-                        <img src="./images/ActivitiesImage2.jpg" alt="Educational Seminar" width="335px">
-                        <div class="text-center md:text-left flex flex-col">
-                            <div class="text-[#0661DF] dark:text-gray-500">
-                            <p>
-                                <time datetime="2025-10-09" class="text-blue-600">October 9, 2025</time> 
-                            </p>
-                            </div>
-                            <h4 class="text-2xl font-bold text-gray-900 dark:text-white mb-3">
-                            Educational Seminar
-                            </h4>
-                            <p class="text-gray-600 dark:text-gray-500">
-                            On October 9, 2025, E-Academy organized a seminar titled “My Journey in IT: From Student to Professional.”
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="flex flex-col gap-6">
-                    <!-- Card 3 -->
-                    <div class="bg-white dark:border-0 rounded-2xl border-2 border-gray-200 dark:bg-gray-800 
-                p-6 flex flex-col md:flex-row items-center md:items-start gap-6 
-                transition-all duration-300 
-                hover:shadow-xl dark:hover:shadow-blue-500/20 h-full">
-        
-                    <img src="./images/activitiesImage4.jpg" alt="Closing Ceremony" width="335px">
-                    
-                    <div class="text-center md:text-left flex flex-col">
-                        <div class="text-[#0661DF] dark:text-gray-500">
-                        <p>
-                            <time datetime="2025-10-25" class="text-blue-600">October 25, 2025</time> 
-                        </p>
-                        </div>
-                        <h4 class="text-2xl font-bold text-gray-900 dark:text-white mb-3">
-                        Student Orientation
-                        </h4>
-                        <p class="text-gray-600 dark:text-gray-500">
-                       ISTAD held the closing ceremony for its 4th Foundation Scholarship Program, celebrating students’ completion of Web Design and Java Programming courses.
-                    </div>
-                    </div>
-                    <!-- card 4 -->
-                    <div class="bg-white dark:border-0 rounded-2xl border-2 border-gray-200 dark:bg-gray-800 
-                    p-6 flex flex-col md:flex-row items-center md:items-start gap-6 
-                    transition-all duration-300 
-                    hover:shadow-xl dark:hover:shadow-blue-500/20 h-full">
-                        <img src="./images/ActivitiesImage6.jpg" alt="Educational Seminar" width="335px" >
-                        <div class="text-center md:text-left flex flex-col">
-                            <div class="text-[#0661DF] dark:text-gray-500">
-                            <p>
-                                <time datetime="2025-10-6" class="text-blue-600">October 6-7, 2025</time> 
-                            </p>
-                            </div>
-                            <h4 class="text-2xl font-bold text-gray-900 dark:text-white mb-3">
-                            Educational Seminar
-                            </h4>
-                            <p class="text-gray-600 dark:text-gray-500">
-                            ISTAD organized an online seminar on choosing IT majors and preparing for postgraduate scholarship opportunities. The session featured ISTAD alumni who are currently pursuing PhD studies in South Korea.
-                            </p>
-                        </div>
-                    </div>
-
-                </div>
             
         </div>
-       
+    <div >
+            <section class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6 mx-auto px-4 md:px-8">
+            <div class="card dark:bg-gray-600 dark:hover:bg-gray-800 bg-white dark:border-0 border-2 border-gray-200 rounded-xl p-5 hover:shadow-lg hover:bg-gray-200 transition w-full max-w-sm "><!--card1-->
+              <div class="flex justify-center ">
+                     <img class="childimage rounded-2xl" src="../asset/html5-emblem-orange-shield-and-white-text-vector.jpg" alt="" width="100%" >
+              </div>
+
+                <div class="ml-4 mt-4">
+                  <h4 class="font-bold text-start dark:text-white ">HTML</h4>
+                <p class="text-gray-400 text-start flex mt-2 mb-2">HTML uses to create and prepare layout of Website.</p>
+                  <span class="text-green-400 dark:text-white">4.9</span>
+                <span>⭐️⭐️⭐️⭐️⭐️</span>
+                <span class="text-gray-400 dark:text-white">(125)</span>
+                
+                
+                
+                
+               <div class="flex items-center justify-between mt-2 mb-2">
+                  <!-- Left section -->
+                  <div class="flex items-center space-x-3">
+                   
+                    <div>
+                      <span class="font-semibold block dark:text-white">Lim KimHeng</span>
+                      <div class="text-sm text-gray-500 dark:text-white">2025</div>
+                    </div>
+                  </div>
+
+                  <!-- Right section -->
+                  
+                </div>
+
+                </div>
+
+                <div class="flex justify-end mt-4">
+                  <a href="" class="text-blue-400 hover:text-blue-600 font-bold">Learn Now</a>
+                </div>
+                </div>
+        
+
+        <div class="card dark:bg-gray-600 dark:hover:bg-gray-800 bg-white dark:border-0 border-2 border-gray-200 rounded-xl p-5 hover:shadow-lg hover:bg-gray-200 transition w-full max-w-sm "><!--card1-->
+              <div class="flex justify-center ">
+                     <img class="childimage rounded-2xl" src="../asset/css3-logo-png_seeklogo-186678.png" alt="" width="100%" >
+              </div>
+
+                <div class="ml-4 mt-4">
+                  <h4 class="font-bold text-start dark:text-white ">CSS</h4>
+                <p class="text-gray-400 text-start flex mt-2 mb-2">CSS uses to design the webpage of the website and add style beyond it. </p>
+                  <span class="text-green-400 dark:text-white">4.9</span>
+                <span>⭐️⭐️⭐️⭐️⭐️</span>
+                <span class="text-gray-400 dark:text-white">(125)</span>
+                
+                
+                
+               
+               <div class="flex items-center justify-between mt-2 mb-2">
+                  <!-- Left section -->
+                  <div class="flex items-center space-x-3">
+                   
+                    <div>
+                      <span class="font-semibold block dark:text-white">Lim KimHeng</span>
+                      <div class="text-sm text-gray-500 dark:text-white">2025</div>
+                    </div>
+                  </div>
+
+                  <!-- Right section -->
+                
+                </div>
+
+                </div>
+
+                <div class="flex justify-end mt-4">
+                  <a href="" class="text-blue-400 hover:text-blue-600 font-bold">Learn Now</a>
+                </div>
+                </div>
+
+                <div class="card dark:bg-gray-600 dark:hover:bg-gray-800 bg-white dark:border-0 border-2 border-gray-200 rounded-xl p-5 hover:shadow-lg hover:bg-gray-200 transition w-full max-w-sm "><!--card1-->
+              <div class="flex justify-center ">
+                     <img class="childimage rounded-2xl" src="../asset/javascript-logo-png_seeklogo-255387.png" alt="" width="100%" >
+              </div>
+
+                <div class="ml-4 mt-4">
+                  <h4 class="font-bold text-start dark:text-white ">JavaScript</h4>
+                <p class="text-gray-400 text-start flex mt-2 mb-2">Javascript uses to design website behavoir, and displat it out.</p>
+                  <span class="text-green-400 dark:text-white">4.9</span>
+                <span>⭐️⭐️⭐️⭐️⭐️</span>
+                <span class="text-gray-400 dark:text-white">(125)</span>
+                
+                
+                
+                
+               <div class="flex items-center justify-between mt-2 mb-2">
+                  <!-- Left section -->
+                  <div class="flex items-center space-x-3">
+                   
+                    <div>
+                      <span class="font-semibold block dark:text-white">Lim KimHeng</span>
+                      <div class="text-sm text-gray-500 dark:text-white">2025</div>
+                    </div>
+                  </div>
+
+                  <!-- Right section -->
+                  <h4 class="text-lg font-bold dark:text-white">$19</h4>
+                </div>
+
+                </div>
+
+                <div class="flex justify-end mt-4">
+                  <a href="" class="text-blue-400 hover:text-blue-600 font-bold">Learn Now</a>
+                </div>
+                </div>
+            </section>
+                
+        
     </section>
 
-    <!-- Hear from our former students -->
-    <section class="py-8 md:py-12 lg:py-16">
-        <div class="text-center mt-5 px-4">
-            <div>
-                <h2 class="text-[#2B6FDC] dark:text-blue-400 text-2xl md:text-3xl lg:text-4xl font-medium">
-                    Hear From Our Former Students
-                </h2>
-                <p class="text-[#6F7276] dark:text-gray-400 mt-2 text-sm md:text-base max-w-3xl mx-auto">
-                    Hear from our alumni: what ISTAD means to them, how it changed their journey, and why it could matter for you.
-                </p>
-            </div>
-        </div>
-        
-        
-        <div class="mx-auto w-[90%] md:w-[85%] lg:w-4/5 mt-8 px-4">
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
-                <!-- student1 -->
-                <div class="p-4 md:p-6 bg-[#F6F9FF] dark:bg-gray-800 rounded-lg dark:border-0 border-2 border-gray-200 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-                    <img src="./images/dane-lim.png" alt="Dane Lim" class="w-32 h-32 md:w-40 md:h-40 mx-auto rounded-full object-cover border-4 border-[#2B6FDC] dark:border-blue-400">
-                    <div class="mt-4">
-                        <h3 class="text-base md:text-lg font-semibold text-center text-gray-800 dark:text-white">Dane Lim</h3>
-                        <p class="text-center text-[#2B6FDC] dark:text-blue-400 font-medium text-sm md:text-base mt-1">Fullstack Developer</p>
-                        <p class="text-[#6F7276] dark:text-gray-500 mt-4 text-sm md:text-base leading-relaxed">"Highly recommend E-Academy for IT students. I went from not understanding coding to learning various technologies."</p>
-                        
-                    </div>
-                    <div class="flex justify-center mt-21 text-[#2B6FDC] dark:text-blue-400 gap-4">
-                            <i class="fa-brands fa-twitter text-xl hover:scale-110 transition-transform cursor-pointer"></i>
-                            <i class="fa-brands fa-linkedin text-xl hover:scale-110 transition-transform cursor-pointer"></i>
-                        </div>
-                </div>
-                
-                <!-- student2 -->
-                <div class="p-4 md:p-6 bg-[#F6F9FF] dark:bg-gray-800 rounded-lg dark:border-0 border-2 border-gray-200 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-                    <img src="./images/sinmany.png" alt="Sin Manny" class="w-32 h-32 md:w-40 md:h-40 mx-auto rounded-full object-cover border-4 border-[#2B6FDC] dark:border-blue-400">
-                    <div class="mt-4">
-                        <h3 class="text-base md:text-lg font-semibold text-center text-gray-800 dark:text-white">Sin Manny</h3>
-                        <p class="text-center text-[#2B6FDC] dark:text-blue-400 font-medium text-sm md:text-base mt-1">Frontend Developer</p>
-                        <p class="text-[#6F7276] dark:text-gray-500 mt-4 text-sm md:text-base leading-relaxed">E-Academy is perfect for developing IT skills. Experienced teachers use effective methods and focus on the latest technologies, making it ideal for starting an IT career.</p>
-                        
-                    </div>
-                    <div class="flex justify-center mt-9 text-[#2B6FDC] dark:text-blue-400 gap-4">
-                            <i class="fa-brands fa-twitter text-xl hover:scale-110 transition-transform cursor-pointer"></i>
-                            <i class="fa-brands fa-linkedin text-xl hover:scale-110 transition-transform cursor-pointer"></i>
-                    </div>
-                </div>           
-                <!-- student3 -->
-                <div class="p-4 md:p-6 bg-[#F6F9FF] dark:bg-gray-800 rounded-lg dark:border-0 border-2 border-gray-200 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-                    <img src="./images/helen-leang.png" alt="Leang Helen" class="w-32 h-32 md:w-40 md:h-40 mx-auto rounded-full object-cover border-4 border-[#2B6FDC] dark:border-blue-400">
-                    <div class="mt-4">
-                        <h3 class="text-base md:text-lg font-semibold text-center text-gray-800 dark:text-white">Leang Helen</h3>
-                        <p class="text-center text-[#2B6FDC] dark:text-blue-400 font-medium text-sm md:text-base mt-1">Cybersecurity Officer</p>
-                        <p class="text-[#6F7276] dark:text-gray-500 mt-4 text-sm md:text-base leading-relaxed">E-Academy is perfect for students for your IT journey with friendly mentor, a great environment and you even get to study abroad.</p>
-                        
-                    </div>
-                    <div class="flex justify-center mt-15 text-[#2B6FDC] dark:text-blue-400 gap-4">
-                            <i class="fa-brands fa-twitter text-xl hover:scale-110 transition-transform cursor-pointer"></i>
-                            <i class="fa-brands fa-linkedin text-xl hover:scale-110 transition-transform cursor-pointer"></i>
-                    </div>
-                </div>
-                
-                <!-- student4 -->
-                <div class="p-4 md:p-6 bg-[#F6F9FF] dark:bg-gray-800 rounded-lg dark:border-0 border-2 border-gray-200 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-                    <img src="./images/phon-sobon.jpg" alt="Phon Sobon" class="w-32 h-32 md:w-40 md:h-40 mx-auto rounded-full object-cover border-4 border-[#2B6FDC] dark:border-blue-400">
-                    <div class="mt-4">
-                        <h3 class="text-base md:text-lg font-semibold text-center text-gray-800 dark:text-white">Phon Sobon</h3>
-                        <p class="text-center text-[#2B6FDC] dark:text-blue-400 font-medium text-sm md:text-base mt-1">Data Analytics</p>
-                        <p class="text-[#6F7276] dark:text-gray-500 mt-4 text-sm md:text-base leading-relaxed">At E-Academy, I'm learning IT with great teachers who explain things clearly. The practical projects and fun activities make learning exciting.</p>
-                        
-                    </div>
-                    <div class="flex justify-center mt-15 text-[#2B6FDC] dark:text-blue-400 gap-4">
-                            <i class="fa-brands fa-twitter text-xl hover:scale-110 transition-transform cursor-pointer"></i>
-                            <i class="fa-brands fa-linkedin text-xl hover:scale-110 transition-transform cursor-pointer"></i>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-    </section>
+    
 
     <!-- Footer -->
     <footer class="bg-gray-900  text-gray-300">
@@ -679,7 +458,7 @@ Certification on Course, taught by top instructors.
         <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-10 md:gap-12 border-b border-gray-700 pb-12">
 
             <div class="col-span-2 md:col-span-1 flex flex-col items-start space-y-4">
-                <img class="h-16 w-16" src="./images/Logo.png" alt="Logo">
+                <img class="h-16 w-16" src="/asset/logo.jpg" alt="Logo">
                 <p class="text-sm text-gray-400 leading-relaxed">
                     Empowering learners through innovative education and technology. Discover your potential with us.
                 </p>
